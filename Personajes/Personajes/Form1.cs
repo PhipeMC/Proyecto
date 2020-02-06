@@ -60,7 +60,7 @@ namespace Create
         private void btn_open_Click(object sender, EventArgs e)
         {
             string file = openFileDialog1.ShowDialog().ToString();
-            MessageBox.Show(file);
+            //MessageBox.Show(file);
             Bitmap img = new Bitmap(openFileDialog1.OpenFile());
             pic_Img.Image = img;
         }
@@ -77,41 +77,45 @@ namespace Create
 
         private void btn_create_Click(object sender, EventArgs e)
         {
-            if (isEmply()) {
+            if (isEmply())
+            {
                 MessageBox.Show("Llena todos los campos correspondientes");
+            }
+            else {
+
             }
         }
 
         public Boolean isEmply() {
-            if (txt_name.Equals(""))
+            if (txt_name.Text.Equals(""))
             {
                 return true;
             }
-            else if (txt_age.Equals(""))
+            else if (txt_age.Text.Equals(""))
             {
                 return true;
             }
-            else if (txt_sexuality.Equals(""))
+            else if (txt_sexuality.Text.Equals(""))
             {
                 return true;
             }
-            else if (txt_strong.Equals(""))
+            else if (txt_strong.Text.Equals(""))
             {
                 return true;
             }
-            else if (txt_weak.Equals(""))
+            else if (txt_weak.Text.Equals(""))
             {
                 return true;
             }
-            else if (txt_spirituality.Equals(""))
+            else if (txt_spirituality.Text.Equals(""))
             {
                 return true;
             }
-            else if (txt_fears.Equals(""))
+            else if (txt_fears.Text.Equals(""))
             {
                 return true;
             }
-            else if(txt_jobs.Equals("")){
+            else if(txt_jobs.Text.Equals("")){
                 return true;
             }
             return false;
