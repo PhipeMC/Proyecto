@@ -77,7 +77,44 @@ namespace Create
 
         private void btn_create_Click(object sender, EventArgs e)
         {
+            if (isEmply()) {
+                MessageBox.Show("Llena todos los campos correspondientes");
+            }
+        }
 
+        public Boolean isEmply() {
+            if (txt_name.Equals(""))
+            {
+                return true;
+            }
+            else if (txt_age.Equals(""))
+            {
+                return true;
+            }
+            else if (txt_sexuality.Equals(""))
+            {
+                return true;
+            }
+            else if (txt_strong.Equals(""))
+            {
+                return true;
+            }
+            else if (txt_weak.Equals(""))
+            {
+                return true;
+            }
+            else if (txt_spirituality.Equals(""))
+            {
+                return true;
+            }
+            else if (txt_fears.Equals(""))
+            {
+                return true;
+            }
+            else if(txt_jobs.Equals("")){
+                return true;
+            }
+            return false;
         }
     }
 }

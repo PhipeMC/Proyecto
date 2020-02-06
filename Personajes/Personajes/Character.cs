@@ -12,7 +12,7 @@ namespace ConsoleApp1
         private List<String> strong_points;
         private List<String> weak_points;
         private String fear { get; set; }
-        private String works { get; set; }
+        private String jobs { get; set; }
         private String sexuality { get; set; }
         private String spirituality { get; set; }
         private Image charac;
