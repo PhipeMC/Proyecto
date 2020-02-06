@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Drawing;
 
-namespace ConsoleApp1
+namespace Create
 {
     class Scenes
     {

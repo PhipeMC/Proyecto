@@ -17,6 +17,8 @@ namespace Create
             InitializeComponent();
         }
 
+        private Bitmap saveImage;
+
         private void label1_Click(object sender, EventArgs e)
         {
 
@@ -63,6 +65,7 @@ namespace Create
             //MessageBox.Show(file);
             Bitmap img = new Bitmap(openFileDialog1.OpenFile());
             pic_Img.Image = img;
+            saveImage = img;
         }
 
         private void fileSystemWatcher1_Changed(object sender, System.IO.FileSystemEventArgs e)
@@ -82,7 +85,17 @@ namespace Create
                 MessageBox.Show("Llena todos los campos correspondientes");
             }
             else {
-
+                String name = txt_name.Text;
+                int age = Convert.ToInt32(txt_age.Text);
+                String sex = txt_sexuality.Text;
+                String data_strong = txt_strong.Text;
+                String data_weak = txt_weak.Text;
+                String spirit = txt_spirituality.Text;
+                String fear = txt_fears.Text;
+                String job = txt_jobs.Text;
+                Character template = new Character(name,age,makeList(data_strong),makeList(data_weak),fear,job,sex,spirit,saveImage);
+                template.view();
+                clear();
             }
         }
 
@@ -119,6 +132,34 @@ namespace Create
                 return true;
             }
             return false;
+        }
+
+        private List<String> makeList(String s) {
+            List<String> list = new List<string>();
+            String[] tmp = new String[1000];
+            tmp = s.Split(',');
+            for (int i=0; i<tmp.Length; i++) {
+                if (!tmp[i].Equals(""))
+                {
+                    list.Add(tmp[i]);
+                }
+                else {
+                    break;
+                }
+            }
+            return list;
+        }
+
+        public void clear() {
+            txt_name.Text = "";
+            txt_age.Text = "";
+            txt_sexuality.Text = "";
+            txt_strong.Text = "";
+            txt_weak.Text = "";
+            txt_spirituality.Text = "";
+            txt_fears.Text = "";
+            txt_jobs.Text = "";
+            pic_Img.Image = null;
         }
     }
 }
