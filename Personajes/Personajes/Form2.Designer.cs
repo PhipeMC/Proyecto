@@ -1,4 +1,4 @@
-﻿namespace Create
+﻿namespace Personajes
 {
     partial class Form2
     {
