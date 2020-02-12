@@ -119,7 +119,7 @@ namespace Personajes
             MessageBox.Show(String.Format("Se ha creado el personaje:\nNombre: {0}\nEdad: {1}\n" +
                 "Sexualidad: {2}\nPuntos fuertes: {3}...\nPuntos debiles: {4}...\nEspiritualidad: {5}\n" +
                 "Miedos: {6}\nTrabajos: {7}", getName(), getAge(), getSexuality(), getStrong()[0], getWeak()[0], getSpirituality()
-                , getFear(), getJob()));
+                , getFear(), getJob()),"Exito",MessageBoxButtons.OK,MessageBoxIcon.Information);
             //Comentario
         }
     }

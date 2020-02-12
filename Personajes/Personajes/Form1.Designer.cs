@@ -74,7 +74,7 @@
             // 
             // txt_name
             // 
-            this.txt_name.Location = new System.Drawing.Point(63, 42);
+            this.txt_name.Location = new System.Drawing.Point(98, 42);
             this.txt_name.Name = "txt_name";
             this.txt_name.Size = new System.Drawing.Size(100, 20);
             this.txt_name.TabIndex = 2;
@@ -90,7 +90,7 @@
             // 
             // txt_age
             // 
-            this.txt_age.Location = new System.Drawing.Point(63, 68);
+            this.txt_age.Location = new System.Drawing.Point(98, 68);
             this.txt_age.Name = "txt_age";
             this.txt_age.Size = new System.Drawing.Size(100, 20);
             this.txt_age.TabIndex = 4;
@@ -106,7 +106,7 @@
             // 
             // txt_sexuality
             // 
-            this.txt_sexuality.Location = new System.Drawing.Point(78, 94);
+            this.txt_sexuality.Location = new System.Drawing.Point(98, 94);
             this.txt_sexuality.Name = "txt_sexuality";
             this.txt_sexuality.Size = new System.Drawing.Size(100, 20);
             this.txt_sexuality.TabIndex = 6;
@@ -124,7 +124,7 @@
             // 
             // txt_strong
             // 
-            this.txt_strong.Location = new System.Drawing.Point(95, 120);
+            this.txt_strong.Location = new System.Drawing.Point(98, 120);
             this.txt_strong.Name = "txt_strong";
             this.txt_strong.Size = new System.Drawing.Size(216, 20);
             this.txt_strong.TabIndex = 8;
@@ -141,7 +141,7 @@
             // 
             // txt_weak
             // 
-            this.txt_weak.Location = new System.Drawing.Point(95, 146);
+            this.txt_weak.Location = new System.Drawing.Point(98, 146);
             this.txt_weak.Name = "txt_weak";
             this.txt_weak.Size = new System.Drawing.Size(218, 20);
             this.txt_weak.TabIndex = 10;
@@ -159,7 +159,7 @@
             // 
             // txt_spirituality
             // 
-            this.txt_spirituality.Location = new System.Drawing.Point(88, 172);
+            this.txt_spirituality.Location = new System.Drawing.Point(98, 172);
             this.txt_spirituality.Name = "txt_spirituality";
             this.txt_spirituality.Size = new System.Drawing.Size(100, 20);
             this.txt_spirituality.TabIndex = 12;
@@ -175,14 +175,14 @@
             // 
             // txt_fears
             // 
-            this.txt_fears.Location = new System.Drawing.Point(60, 198);
+            this.txt_fears.Location = new System.Drawing.Point(98, 198);
             this.txt_fears.Name = "txt_fears";
             this.txt_fears.Size = new System.Drawing.Size(100, 20);
             this.txt_fears.TabIndex = 14;
             // 
             // txt_jobs
             // 
-            this.txt_jobs.Location = new System.Drawing.Point(67, 224);
+            this.txt_jobs.Location = new System.Drawing.Point(98, 224);
             this.txt_jobs.Name = "txt_jobs";
             this.txt_jobs.Size = new System.Drawing.Size(100, 20);
             this.txt_jobs.TabIndex = 15;
@@ -198,9 +198,9 @@
             // 
             // pic_Img
             // 
-            this.pic_Img.Location = new System.Drawing.Point(404, 27);
+            this.pic_Img.Location = new System.Drawing.Point(362, 27);
             this.pic_Img.Name = "pic_Img";
-            this.pic_Img.Size = new System.Drawing.Size(207, 187);
+            this.pic_Img.Size = new System.Drawing.Size(247, 217);
             this.pic_Img.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pic_Img.TabIndex = 17;
             this.pic_Img.TabStop = false;
@@ -208,7 +208,7 @@
             // 
             // btn_create
             // 
-            this.btn_create.Location = new System.Drawing.Point(16, 267);
+            this.btn_create.Location = new System.Drawing.Point(16, 260);
             this.btn_create.Name = "btn_create";
             this.btn_create.Size = new System.Drawing.Size(75, 23);
             this.btn_create.TabIndex = 18;
@@ -218,7 +218,7 @@
             // 
             // btn_open
             // 
-            this.btn_open.Location = new System.Drawing.Point(440, 222);
+            this.btn_open.Location = new System.Drawing.Point(416, 260);
             this.btn_open.Name = "btn_open";
             this.btn_open.Size = new System.Drawing.Size(139, 23);
             this.btn_open.TabIndex = 19;

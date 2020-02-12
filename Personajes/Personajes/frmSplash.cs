@@ -42,7 +42,9 @@ namespace Personajes
             tmr.Stop();
             this.Hide();
             frmPantallaInicio f = new frmPantallaInicio();
-            f.Show();
+            Form1 test = new Form1();
+            //f.Show();
+            test.Show();
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)

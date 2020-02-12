@@ -82,20 +82,27 @@ namespace Personajes
         {
             if (isEmply())
             {
-                MessageBox.Show("Llena todos los campos correspondientes");
+                MessageBox.Show("Llena todos los campos correspondientes","Error",MessageBoxButtons.OK,MessageBoxIcon.Error);
             }
             else {
-                String name = txt_name.Text;
-                int age = Convert.ToInt32(txt_age.Text);
-                String sex = txt_sexuality.Text;
-                String data_strong = txt_strong.Text;
-                String data_weak = txt_weak.Text;
-                String spirit = txt_spirituality.Text;
-                String fear = txt_fears.Text;
-                String job = txt_jobs.Text;
-                Character template = new Character(name,age,makeList(data_strong),makeList(data_weak),fear,job,sex,spirit,saveImage);
-                template.view();
-                clear();
+                try
+                {
+                    String name = txt_name.Text;
+                    int age = Convert.ToInt32(txt_age.Text);
+                    String sex = txt_sexuality.Text;
+                    String data_strong = txt_strong.Text;
+                    String data_weak = txt_weak.Text;
+                    String spirit = txt_spirituality.Text;
+                    String fear = txt_fears.Text;
+                    String job = txt_jobs.Text;
+                    Character template = new Character(name, age, makeList(data_strong), makeList(data_weak), fear, job, sex, spirit, saveImage);
+                    template.view();
+                    clear();
+                }
+                catch (FormatException) {
+                    MessageBox.Show("Ingresa una edad valida","Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                
             }
         }
 
