@@ -30,7 +30,7 @@ namespace Personajes
         private void SplahForm_Load(object sender, EventArgs e)
         {
             tmr = new Timer();
-            tmr.Interval = 5000;
+            tmr.Interval = 7500;
             tmr.Start();
             tmr.Tick += tmr_Tick;
             //pictureBox2.Load("giphy.gif");
@@ -45,6 +45,9 @@ namespace Personajes
             f.Show();
         }
 
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
 
+        }
     }
 }
