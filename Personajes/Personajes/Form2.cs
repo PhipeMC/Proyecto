@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Create
+namespace Personajes
 {
     public partial class Form2 : Form
     {
@@ -36,6 +36,11 @@ namespace Create
             this.Hide();
             Form1 F = new Form1();
             F.Show();
+        }
+
+        private void Form2_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

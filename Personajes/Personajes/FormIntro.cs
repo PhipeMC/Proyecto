@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Create
+namespace Personajes
 {
     public partial class frmIntro : Form
     {
@@ -65,6 +65,11 @@ namespace Create
             caliz.setInspiracion(txtInspire.Text);
             caliz.show();
 
+
+        }
+
+        private void frmIntro_Load(object sender, EventArgs e)
+        {
 
         }
     }

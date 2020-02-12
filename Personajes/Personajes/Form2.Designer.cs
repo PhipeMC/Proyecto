@@ -35,9 +35,10 @@
             // 
             // btnIntroduccion
             // 
-            this.btnIntroduccion.Location = new System.Drawing.Point(49, 176);
+            this.btnIntroduccion.Location = new System.Drawing.Point(37, 143);
+            this.btnIntroduccion.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnIntroduccion.Name = "btnIntroduccion";
-            this.btnIntroduccion.Size = new System.Drawing.Size(173, 99);
+            this.btnIntroduccion.Size = new System.Drawing.Size(130, 80);
             this.btnIntroduccion.TabIndex = 0;
             this.btnIntroduccion.Text = "Introducción";
             this.btnIntroduccion.UseVisualStyleBackColor = true;
@@ -45,9 +46,10 @@
             // 
             // btnPersonaje
             // 
-            this.btnPersonaje.Location = new System.Drawing.Point(313, 176);
+            this.btnPersonaje.Location = new System.Drawing.Point(235, 143);
+            this.btnPersonaje.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnPersonaje.Name = "btnPersonaje";
-            this.btnPersonaje.Size = new System.Drawing.Size(173, 99);
+            this.btnPersonaje.Size = new System.Drawing.Size(130, 80);
             this.btnPersonaje.TabIndex = 1;
             this.btnPersonaje.Text = "Personaje";
             this.btnPersonaje.UseVisualStyleBackColor = true;
@@ -55,9 +57,10 @@
             // 
             // btnEscena
             // 
-            this.btnEscena.Location = new System.Drawing.Point(580, 176);
+            this.btnEscena.Location = new System.Drawing.Point(435, 143);
+            this.btnEscena.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnEscena.Name = "btnEscena";
-            this.btnEscena.Size = new System.Drawing.Size(173, 99);
+            this.btnEscena.Size = new System.Drawing.Size(130, 80);
             this.btnEscena.TabIndex = 2;
             this.btnEscena.Text = "Escena";
             this.btnEscena.UseVisualStyleBackColor = true;
@@ -65,14 +68,16 @@
             // 
             // Form2
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(600, 366);
             this.Controls.Add(this.btnEscena);
             this.Controls.Add(this.btnPersonaje);
             this.Controls.Add(this.btnIntroduccion);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Form2";
             this.Text = "Form2";
+            this.Load += new System.EventHandler(this.Form2_Load);
             this.ResumeLayout(false);
 
         }

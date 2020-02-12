@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Create
+namespace Personajes
 {
     public partial class frmPantallaInicio : Form
     {
@@ -30,6 +30,11 @@ namespace Create
         private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
         {
             
+        }
+
+        private void frmPantallaInicio_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

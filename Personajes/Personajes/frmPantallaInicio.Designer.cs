@@ -77,6 +77,7 @@
             this.Controls.Add(this.btnCrearNuevoGD);
             this.Name = "frmPantallaInicio";
             this.Text = "Inicio";
+            this.Load += new System.EventHandler(this.frmPantallaInicio_Load);
             this.ResumeLayout(false);
 
         }

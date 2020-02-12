@@ -1,4 +1,4 @@
-﻿namespace Escena
+﻿namespace Personajes
 {
     partial class frmEscenas
     {

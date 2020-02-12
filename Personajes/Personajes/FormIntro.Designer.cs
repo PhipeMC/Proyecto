@@ -228,6 +228,7 @@
             this.MaximizeBox = false;
             this.Name = "frmIntro";
             this.Text = "Introducción";
+            this.Load += new System.EventHandler(this.frmIntro_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.plResumen.ResumeLayout(false);

@@ -1,4 +1,4 @@
-﻿namespace PracticaUnidad
+﻿namespace Personajes
 {
     partial class SplahForm
     {
